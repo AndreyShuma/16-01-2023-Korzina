@@ -8,7 +8,6 @@ const btn_all = document.querySelector('.btn_all');
 const input_banan = document.querySelector('.input_banan');
 
 let a = 0;
-let b = 0;
 
 function result() {
     btn_all.innerHTML = a ;
@@ -17,7 +16,7 @@ function result() {
     console.log(typeof Number(price_banan))
 }
 
-input_banan.addEventListener('change', () => {
+input_banan.addEventListener('keyup', () => {
     if (+input_banan.value >= 0) {
         a = +input_banan.value;
     } else ( input_banan.value = 0);
