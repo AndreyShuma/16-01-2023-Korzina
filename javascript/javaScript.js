@@ -12,11 +12,15 @@ let b = 0;
 
 function result() {
     btn_all.innerHTML = a ;
-    price_all.textContent = a * price_banan;
+    price_all.textContent = a * Number(price_banan) ;
+    console.log(typeof a);
+    console.log(typeof Number(price_banan))
 }
 
 input_banan.addEventListener('change', () => {
-    a = input_banan.value;
+    if (+input_banan.value >= 0) {
+        a = +input_banan.value;
+    } else ( input_banan.value = 0);
     result();
     // console.log("input:", a)
 })
