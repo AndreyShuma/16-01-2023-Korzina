@@ -12,14 +12,18 @@ let a = 0;
 function result() {
     btn_all.innerHTML = a ;
     price_all.textContent = a * Number(price_banan) ;
-    console.log(typeof a);
-    console.log(typeof Number(price_banan))
+    // console.log(typeof a);
+    // console.log(typeof Number(price_banan))
 }
 
 input_banan.addEventListener('keyup', () => {
     if (+input_banan.value >= 0) {
         a = +input_banan.value;
-    } else ( input_banan.value = 0);
+    } else { 
+        input_banan.value = 0;
+        a = 0;
+    };
+
     result();
     // console.log("input:", a)
 })
@@ -43,3 +47,4 @@ btn_min.addEventListener('click', () => {
 
 btn_all.innerHTML = a;
 price_all.textContent = 0;
+console.log(btn_all);
