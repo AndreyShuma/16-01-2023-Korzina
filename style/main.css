@@ -1,0 +1,23 @@
+.wrapper h2 {
+  text-align: center;
+}
+
+.magazin {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 400px 200px 50px 200px 50px 100px 1fr;
+  grid-template-rows: 70px repeat(2, 40px);
+  text-align: center;
+}
+.magazin .input_banan {
+  max-width: 120px;
+  text-align: center;
+}
+.magazin .btn_plus, .magazin .btn_minus {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 22px;
+}/*# sourceMappingURL=main.css.map */
